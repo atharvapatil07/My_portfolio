@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atharva Patil — B.Tech Computer Science, aspiring software engineer focused on AI, cloud computing, web technologies and scalable digital solutions.">
+  <title>Atharva Patil — Creative Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="cursorSmoke" aria-hidden="true"></canvas>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__line"></div>
+    <div class="loader__count"><span id="loaderCount">0</span>%</div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Atharva Patil home">
+      <span class="brand__mark">A</span>
+      <span class="brand__name">ATHARVA</span>
+    </a>
+    <button class="menu" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+      <span>MENU</span><span class="menu__icon"><i></i><i></i></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__meta mono reveal">/ PORTFOLIO · 2026</div>
+      <div class="hero__eyebrow reveal">Shipping Ideas Into Reality.</div>
+      <h1 id="heroTitle" class="hero__title" aria-label="Atharva">
+        <span class="hero__letter">A</span><span class="hero__letter">T</span><span class="hero__letter">H</span><span class="hero__letter">A</span><span class="hero__letter">R</span><span class="hero__letter">V</span><span class="hero__letter">A</span>
+      </h1>
+      <div class="hero__bottom">
+        <p class="hero__intro reveal">B.Tech Computer Science Student <span>/</span> Aspiring Software Engineer <span>/</span> Passionate about AI, Cloud Computing &amp; Full-Stack Development.</p>
+        <a class="circle-link magnetic" href="#work" aria-label="Explore work"><span>EXPLORE<br>WORK</span><span class="arrow">↘</span></a>
+      </div>
+      <div class="hero__scroll mono">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="statement" id="about">
+      <div class="section-tag mono">01 / THE PHILOSOPHY</div>
+      <div class="statement__grid statement__grid--supporting">
+        <div class="statement__label">The<br>Philosophy</div>
+        <div class="statement__copy">
+          <p class="statement__lead split-reveal">I’m driven by curiosity and a deep interest in Artificial Intelligence, Software Development, Cloud Computing, and Web Technologies.</p>
+          <p>I enjoy transforming complex challenges into elegant, efficient solutions — from full-stack applications and AI-driven automation to scalable cloud systems.</p>
+        </div>
+      </div>
+      <div class="philosophy-image-wrap reveal-media hands-reveal" aria-label="Engineering, design and curiosity">
+        <img src="https://jishnumondal.vercel.app/images/philosophy-bg.jpg" alt="" class="philosophy-image philosophy-image--base">
+        <div class="hands-layer hands-layer--left" aria-hidden="true">
+          <img src="https://jishnumondal.vercel.app/images/philosophy-bg.jpg" alt="" class="philosophy-image">
+        </div>
+        <div class="hands-layer hands-layer--right" aria-hidden="true">
+          <img src="https://jishnumondal.vercel.app/images/philosophy-bg.jpg" alt="" class="philosophy-image">
+        </div>
+        <div class="philosophy-quote" aria-label="The philosophy">
+          <div class="philosophy-quote__tag mono"><span></span> THE PHILOSOPHY</div>
+          <p>I believe great software is born at the intersection of engineering precision and design intuition. Every pixel, every interaction, every line of code is an opportunity to create something that moves people.</p>
+        </div>
+        <div class="image-caption mono">ENGINEERING × DESIGN × CURIOSITY</div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-head">
+        <div class="section-tag mono">02 / SELECTED FOCUS</div>
+        <div class="section-count mono">A T H A R V A</div>
+      </div>
+      <div class="work__intro">
+        <h2>Selected <em>Focus</em></h2>
+        <p>Areas I’m actively building in — shaped by my academic work, practical experience, and long-term interests.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card" data-index="01">
+          <div class="project-card__top">
+            <span class="mono">01 / 05</span><span class="mono">AI · AUTOMATION</span>
+          </div>
+          <div class="project-card__media"><img src="https://jishnumondal.vercel.app/portfolio/echo-crafting.png" alt="Abstract creative technology interface" loading="lazy"></div>
+          <div class="project-card__body">
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring AI-driven automation and intelligent software ideas that turn complex problems into useful digital experiences.</p>
+            <div class="chips"><span>AI</span><span>AUTOMATION</span><span>SOFTWARE</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-index="02">
+          <div class="project-card__top">
+            <span class="mono">02 / 05</span><span class="mono">FULL-STACK</span>
+          </div>
+          <div class="project-card__media"><img src="https://jishnumondal.vercel.app/portfolio/julian-vance.png" alt="Camera inspired editorial website interface" loading="lazy"></div>
+          <div class="project-card__body">
+            <h3>Full-Stack Development</h3>
+            <p>Designing and developing maintainable web applications with a focus on clean interfaces, useful functionality, and performance.</p>
+            <div class="chips"><span>WEB</span><span>FRONTEND</span><span>BACKEND</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-index="03">
+          <div class="project-card__top">
+            <span class="mono">03 / 05</span><span class="mono">CYBER SECURITY</span>
+          </div>
+          <div class="project-card__media"><img src="https://jishnumondal.vercel.app/portfolio/echo-studio.png" alt="Dark digital design studio interface" loading="lazy"></div>
+          <div class="project-card__body">
+            <h3>Cyber Security &amp; Networking</h3>
+            <p>Practical exposure to network configuration, threat detection, secure network setups, vulnerability documentation, and real-time monitoring.</p>
+            <div class="chips"><span>NETWORKING</span><span>SECURITY</span><span>MONITORING</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-index="04">
+          <div class="project-card__top">
+            <span class="mono">04 / 05</span><span class="mono">CLOUD SYSTEMS</span>
+          </div>
+          <div class="project-card__media"><img src="https://jishnumondal.vercel.app/portfolio/mocha-miso.jpg" alt="Modern cafe management system interface" loading="lazy"></div>
+          <div class="project-card__body">
+            <h3>Cloud Computing</h3>
+            <p>Learning how scalable cloud infrastructure can support dependable systems, automation workflows, and digital products that perform at scale.</p>
+            <div class="chips"><span>CLOUD</span><span>SCALABILITY</span><span>DEPLOYMENT</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-index="05">
+          <div class="project-card__top">
+            <span class="mono">05 / 05</span><span class="mono">SYSTEMS</span>
+          </div>
+          <div class="project-card__media"><img src="https://jishnumondal.vercel.app/portfolio/sencruzo.png" alt="Editorial creative portfolio interface" loading="lazy"></div>
+          <div class="project-card__body">
+            <h3>Data Structures &amp; System Design</h3>
+            <p>Strengthening core computer science fundamentals with data structures, algorithms, system design, and hands-on problem solving.</p>
+            <div class="chips"><span>DSA</span><span>SYSTEM DESIGN</span><span>CS FUNDAMENTALS</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="section-tag mono">03 / EXPERIENCE</div>
+      <div class="experience__head">
+        <h2>Where I’ve <em>Been</em></h2>
+        <p>My practical journey through leadership, internship experience, and computer science education.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-item__date mono">JAN 2026 — PRESENT</div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__org">KICK TO TECH</div>
+            <h3>Technical Lead</h3>
+            <p class="timeline-item__place">Pune City</p>
+          </div>
+          <span class="timeline-item__num">01</span>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-item__date mono">AUG 2024 — PRESENT</div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__org">JSPM UNIVERSITY PUNE</div>
+            <h3>Cyber Security &amp; Networking Intern</h3>
+            <p class="timeline-item__place">Pune, Maharashtra, India</p>
+            <ul>
+              <li>Gained exposure to network configuration, threat detection, and ethical hacking fundamentals.</li>
+              <li>Assisted in configuring secure network setups and documenting system vulnerabilities.</li>
+              <li>Strengthened understanding of network security tools and real-time monitoring methods.</li>
+            </ul>
+          </div>
+          <span class="timeline-item__num">02</span>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-item__date mono">AUG 2024 — PRESENT</div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__org">JSPM UNIVERSITY PUNE</div>
+            <h3>Bachelor of Technology — Computer Science</h3>
+            <p class="timeline-item__place">Pune, Maharashtra, India</p>
+          </div>
+          <span class="timeline-item__num">03</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-tag mono">04 / GET IN TOUCH</div>
+      <div class="contact__title-wrap">
+        <h2>Let’s Create Something <em>Extraordinary</em></h2>
+      </div>
+      <p class="contact__intro">Have a project in mind or want to collaborate? Send a message and let’s talk.</p>
+
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="detail-block">
+            <span class="mono">EMAIL</span>
+            <a href="mailto:apatilatharva2005@gmail.com">apatilatharva2005@gmail.com</a>
+          </div>
+          <div class="detail-block">
+            <span class="mono">LINKEDIN</span>
+            <a href="https://www.linkedin.com/in/atharva-patil-013220253" target="_blank" rel="noreferrer">/in/atharva-patil-013220253</a>
+          </div>
+          <div class="detail-block">
+            <span class="mono">LOCATION</span>
+            <p>Pune District, Maharashtra, India</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>Name<input name="name" type="text" placeholder="Your name" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" placeholder="your@email.com" autocomplete="email" required></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me a little about the project..." required></textarea></label>
+          <button type="submit" class="submit magnetic">Send Message <span>↗</span></button>
+          <p class="form-note mono" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Atharva Patil. Crafted with intention.</span>
+    <a href="#top" class="back-top">BACK TO TOP <span>↑</span></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
